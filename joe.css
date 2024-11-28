@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(white, white);
+}
+
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3.5rem;
+
+}
+
+.logo img {
+    height: 35px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(155, 155, 155);
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.second {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.second .left {
+    width: 70%;
+    font-size: 30px;
+    color: black;
+    padding: 70px 90px;
+
+}
+.second .left h5{
+    padding: 40px 0;
+}
+
+/* section 2  ................. */
+
+.video video{
+    width: 100%;
+}
+
+
+/* section 3 .................... */
+
+.third {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.third .left {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third .left p {
+    font-size: 20px;
+    padding: 0 80px;
+    line-height: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.third .right {
+    width: 40%;
+    height: 80%;
+    padding: 60px 0;
+    padding-left: 80px;
+}
+
+.third .right h3 {
+    width: 420px;
+    padding:  10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.third .right h2{
+    padding: 40px 0;
+}
+
+
+/* section 4 .................... */
+.parah{
+    height: 400px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 60px 60px;
+}
+.parah h1{
+    font-size: 50px;
+    width: 500px;
+}
+
+
+/* section 5 ....................... */
+
+.image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+.image .left-video{
+    width: 45%;
+    height: 100%;
+}
+.left-video video{
+    width: 100%;
+}
+.image .right-image{
+    width: 45%;
+    height: 100%;
+}
+
+.right-image img{
+    width: 100%;
+}
+/* section 6 ....................... */
+
+.phone{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.phone .phone-left{
+    width: 27%;
+    height: 70%;
+}
+.phone .phone-left img{
+    width: 100%;
+    height: 100%;
+    border: 10px solid black;
+    border-radius: 50px;
+}
+.phone .phone-right{
+    width: 27%;
+    height: 70%;
+    margin-top: 90px;
+}
+.phone .phone-right video{
+    width: 100%;
+    height: 100%;
+    border: 10px solid black;
+    border-radius: 50px;
+}
+
+/* section 7 ....................... */
+
+.scroll img{
+    width: 100%;
+    height: 100vh;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+/* section 8 ....................... */
+
+
+.footer{
+    width: 100%;
+    min-height: 50vh;
+    background-color: azure;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+.footer .box1{
+    width: 423px;
+    padding: 30px;
+}
+.footer .box2{
+    width: 423px;
+}
+.footer .box3{
+    width: 423px;
+}
+.footer .box1 img{
+    height: 40px;
+}
+.footer .box2{
+    padding: 30px;
+}
+.footer .box2 li{
+   list-style: none;
+   padding: 10px;
+}
+.footer .box2 a {
+    color: black;
+}
+.footer .box2 a:hover{
+    color: blue;
+}
+.footer .box3{
+    padding: 30px;
+}
+.footer .box3 h1{
+    padding: 20px;
+}
+.footer .box3 li{
+    padding: 8px;
+}
+.footer .box3 .icon{
+    margin-top: 20px;
+    margin-left: 250px;
+}

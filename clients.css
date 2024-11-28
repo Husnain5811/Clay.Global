@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(white, white);
+}
+
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3.5rem;
+
+}
+
+.logo img {
+    height: 35px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(155, 155, 155);
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+/* section 2 ..................... */
+.client h1{
+   font-size: 50px;
+   padding:0px 80px;
+   font-weight: 900;
+   padding-top: 90px;
+}
+.client p{
+    font-size: 30px;
+    width: 800px;
+    padding: 40px 80px;
+}
+
+
+/* section 3 ................ */
+
+swiper-container {
+    height: 100vh;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* section 4 ................ */
+
+.elem{
+    display: flex;
+    justify-content:space-around;
+    padding: 40px;
+}
+.elem .one{
+    width: 300px;
+}
+.elem .one p{
+    color: gray;
+    padding-top: 10px;
+    font-size: 17px;
+}
+.elem .two{
+    width: 250px;
+}
+.elem .two p{
+    color: gray;
+    padding-top: 10px;
+    font-size: 17px;
+}
+.elem .three{
+    width: 300px;
+}
+.elem .three p{
+    color: gray;
+    padding-top: 10px;
+    font-size: 17px;
+}
+
+
+/* section 5 ................ */
+
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.arrows {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.arrow {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.arrow:hover {
+    background-color: #0056b3;
+}
+
+#paragraph {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    font-size: 30px;
+    padding: 90px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(125, 40, 40, 0.1);
+}

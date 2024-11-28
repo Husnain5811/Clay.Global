@@ -1,0 +1,496 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(white, white);
+}
+
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3.5rem;
+
+}
+
+.logo img {
+    height: 35px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(155, 155, 155);
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.second {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.second .left {
+    width: 70%;
+
+}
+
+.second .left h1 {
+    color: black;
+    padding: 150px 50px;
+    font-size: 3.4rem;
+    flex-direction: row;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.second .right img {
+    width: 90%;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video video {
+    width: 100%;
+    height: 70%;
+}
+
+.third {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin-top: 40px;
+}
+
+.third .left {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third .left p {
+    font-size: 27px;
+    padding: 0 80px;
+    line-height: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.third .right {
+    width: 50%;
+    height: 100%;
+    padding: 160px 0;
+    padding-left: 160px;
+}
+
+.third .right h1 {
+    width: 420px;
+    padding: 7px 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.third .right .list {
+    position: relative;
+
+}
+
+.third .right .list img {
+    width: 200px;
+    position: absolute;
+    left: -50%;
+    top: 0;
+    opacity: 0;
+    z-index: 2;
+    transition: all 0.9s;
+}
+
+.rows {
+    width: 100%;
+    height: 40vh;
+}
+
+.rows .row1 {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rows .row1 img {
+    width: 180px;
+    height: 100px;
+    transition: all ease 0.5s;
+
+}
+
+.rows .row1 img:hover {
+    scale: 1.5;
+}
+
+.rows .row2 img {
+    width: 180px;
+    height: 100px;
+    transition: all ease 0.5s;
+}
+
+.rows .row2 img:hover {
+    scale: 1.5;
+}
+
+.rows .row2 {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn h5::after {
+    display: block;
+}
+
+.btn h5:hover::after {
+    content: "Clients";
+    color: gray;
+
+}
+
+.vid2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.vid2 .left video {
+    width: 500px;
+
+
+
+}
+
+.vid2 .right video {
+    margin-top: 600px;
+    width: 450px;
+}
+
+.vid2 .left h1,
+p {
+    padding: 5px;
+}
+
+.vid2 .left li {
+    color: rgba(128, 128, 128, 0.646);
+}
+
+.vid2 .left ul {
+    display: flex;
+    padding: 10px;
+    gap: 35px;
+    /* opacity: 0; */
+}
+
+.vid2 .right h1,
+p {
+    padding: 5px;
+}
+
+.vid2 .active {
+    color: rgba(128, 128, 128, 0.525);
+    padding-top: 10px;
+    opacity: 0;
+    transition: all ease 0.6s;
+}
+
+.vid2 .second {
+    color: rgba(128, 128, 128, 0.525);
+    padding-top: 10px;
+}
+
+.work {
+    margin-top: 190px;
+    width: 100%;
+    height: 100vh;
+    padding: 80px;
+    position: relative;
+
+}
+
+.work .head video {
+    height: 550px;
+    box-shadow: 2px 2px 15px black;
+    margin-bottom: 5px;
+}
+
+.work .text {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.right .second {
+    opacity: 0;
+    transition: all ease 0.9s;
+}
+
+.work .show {
+    padding-top: 7px;
+    color: rgba(128, 128, 128, 0.658);
+    opacity: 0;
+    transition: all ease 0.8s;
+}
+
+.video5 {
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 350px;
+}
+
+.video5 .left video {
+    height: 500px;
+}
+
+.video5 .right video {
+    height: 600px;
+}
+
+.video5 .left .odd {
+    color: rgba(128, 128, 128, 0.751);
+    opacity: 0;
+    padding-top: 10px;
+    transition: all ease 0.8s;
+}
+
+.video5 .right .feb {
+    color: rgba(128, 128, 128, 0.751);
+    opacity: 0;
+    padding-top: 10px;
+    transition: all ease 0.8s;
+}
+
+
+swiper-container {
+    margin-top: 200px;
+    height: 100vh;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.article {
+    width: 100%;
+    background-color: black;
+    margin-top: 120px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.article h1 {
+    color: white;
+    font-size: 50px;
+    padding: 40px;
+}
+
+.art1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.art1 img {
+    width: 300px;
+    margin-left: 60px;
+}
+
+.art1 h1 {
+    color: white;
+
+}
+
+.border {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.18);
+    margin-top: 50px;
+}
+
+.art2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.art2 img {
+    width: 300px;
+    margin-left: 60px;
+}
+
+.art2 h1 {
+    color: white;
+
+}
+
+.border {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.18);
+    margin-top: 50px;
+}
+
+.art3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.art3 img {
+    width: 300px;
+    margin-left: 60px;
+}
+
+.art3 h1 {
+    color: white;
+
+}
+
+.border {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.18);
+    margin-top: 50px;
+}
+
+.footer{
+    width: 100%;
+    min-height: 50vh;
+    background-color:white;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    
+}
+.footer .box1{
+    width: 423px;
+    padding: 30px;
+}
+.footer .box2{
+    width: 423px;
+}
+.footer .box3{
+    width: 423px;
+}
+.footer .box1 img{
+    height: 40px;
+}
+.footer .box2{
+    padding: 30px;
+}
+.footer .box2 li{
+   list-style: none;
+   padding: 10px;
+}
+.footer .box2 a {
+    color: black;
+}
+.footer .box2 a:hover{
+    color: blue;
+}
+.footer .box3{
+    padding: 30px;
+}
+.footer .box3 h1{
+    padding: 20px;
+}
+.footer .box3 li{
+    padding: 8px;
+}
+.footer .box3 .icon{
+    margin-top: 20px;
+    margin-left: 250px;
+}
